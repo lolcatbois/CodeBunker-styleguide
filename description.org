@@ -1,7 +1,6 @@
 #+title:     CodeBunker
 #+subtitle:  Description of Stylegudie
 #+author:    Simon Sölder | Felix Macho
-#+email:     soelder@hotmail.com
 #+OPTIONS: toc:nil reveal_width:1400 reveal_height:1000
 #+REVEAL_ROOT: https://cdn.jsdelivr.net/npm/reveal.js
 #+REVEAL_VERSION: 4
