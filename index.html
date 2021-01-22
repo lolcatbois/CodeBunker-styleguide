@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<title>CodeBunker</title>
+<meta name="author" content="Simon Sölder | Felix Macho"/>
+<style type="text/css">
+.underline { text-decoration: underline; }
+</style>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js/dist/reveal.css"/>
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js/dist/theme/blood.css" id="theme"/>
+</head>
+<body>
+<div class="reveal">
+<div class="slides">
+<section id="sec-title-slide">
+<h1 class="title">CodeBunker</h1><h2 class="author">Simon Sölder | Felix Macho</h2><p class="date">Created: 2021-01-22 Fri 19:47</p>
+</section>
+
+<section>
+<section id="slide-1">
+<h2 id="1"><span class="section-number-2">1</span> About</h2>
+<div class="outline-text-2" id="text-1">
+</div>
+</section>
+<section id="slide-1-1">
+<h3 id="1-1"><span class="section-number-3">1.1</span> Description</h3>
+<p>
+Eine CRUD Social Media Cloud Plattform für Studierende der FHS zum einfachen tauschen („sharen“) von Assets, Code, Snippets, Tips, Dateien zwischen Studenten. Filterungen mit Tags/Kategorien, welche entweder für interessante Thematiken oder Studienfächer zuständig sind und damit verbundene smarte Vorschläge.
+</p>
+</section>
+<section id="slide-1-2">
+<h3 id="1-2"><span class="section-number-3">1.2</span> Target Group</h3>
+<p>
+Students of the FH Salzburg. The application will mostly be used by students of the more technical- and design-oriented course of studies. (MMA, MMT, ITS)
+</p>
+
+</section>
+</section>
+<section>
+<section id="slide-2">
+<h2 id="2"><span class="section-number-2">2</span> Requirements for the styleguide</h2>
+<div class="outline-text-2" id="text-2">
+</div>
+</section>
+<section id="slide-2-1">
+<h3 id="2-1"><span class="section-number-3">2.1</span> Typography</h3>
+<p>
+Describe various aspects of the projects typography.
+</p>
+<ul>
+<li>font families</li>
+<li>font sizes, weight, line-height,&#x2026;</li>
+<li>define for each text-element (<code>h1</code>, <code>h2</code>,&#x2026;)</li>
+
+</ul>
+</section>
+<section id="slide-2-2">
+<h3 id="2-2"><span class="section-number-3">2.2</span> Colors</h3>
+<p>
+Set a color scheme.
+</p>
+<ul>
+<li>HEX Values</li>
+<li>RGB Values</li>
+
+</ul>
+</section>
+<section id="slide-2-3">
+<h3 id="2-3"><span class="section-number-3">2.3</span> Interactive Components</h3>
+<p>
+Describe components that the user can interact with.
+</p>
+<ul>
+<li>buttons</li>
+<li>navigation</li>
+<li>input</li>
+<li>&#x2026;</li>
+
+</ul>
+</section>
+<section id="slide-2-4">
+<h3 id="2-4"><span class="section-number-3">2.4</span> Framework</h3>
+<p>
+We will be using SCSS.
+</p>
+<ul>
+<li>(S)CSS Normalize</li>
+<li>probably BEM naming convention</li>
+<li>no additonal CSS Frameworks</li>
+
+</ul>
+</section>
+<section id="slide-2-5">
+<h3 id="2-5"><span class="section-number-3">2.5</span> Animations</h3>
+<p>
+Describe basic animations for buttons, navigation,&#x2026;
+</p>
+</section>
+<section id="slide-2-6">
+<h3 id="2-6"><span class="section-number-3">2.6</span> Emotions and Perspective</h3>
+<p>
+Define what the application SHOULD be and what we are trying to achieve.
+What should the users feel when using the app?
+</p>
+</section>
+<section id="slide-2-7">
+<h3 id="2-7"><span class="section-number-3">2.7</span> Responsiveness</h3>
+<p>
+Describe various aspects that help in creating a consistens layout across all supported devices (breakpoints,&#x2026;)
+</p>
+</section>
+<section id="slide-2-8">
+<h3 id="2-8"><span class="section-number-3">2.8</span> File Structure</h3>
+<p>
+One main scss file where multiple partials are imported. Each partial describes a different category.
+</p>
+<ul>
+<li><code>_fonts.scss</code></li>
+<li><code>_mixins.scss</code></li>
+<li>&#x2026;</li>
+
+</ul>
+</section>
+</section>
+</div>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/reveal.js/dist/reveal.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/reveal.js/plugin/markdown/markdown.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/reveal.js/plugin/notes/notes.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/reveal.js/plugin/search/search.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/reveal.js/plugin/zoom/zoom.js"></script>
+<script src="https://cdn.jsdelivr.net/gh/rajgoel/reveal.js-plugins/chalkboard/plugin.js"></script>
+<script>
+// Full list of configuration options available here:
+// https://github.com/hakimel/reveal.js#configuration
+Reveal.initialize({
+
+controls: true,
+progress: true,
+history: false,
+center: true,
+slideNumber: 'c',
+rollingLinks: false,
+keyboard: true,
+mouseWheel: false,
+fragmentInURL: false,
+hashOneBasedIndex: false,
+pdfSeparateFragments: true,
+
+overview: true,
+width: 1400,
+height: 1000,
+
+transition: 'slide',
+transitionSpeed: 'default',
+
+// Plugins with reveal.js 4.x
+plugins: [ RevealMarkdown, RevealNotes, RevealSearch, RevealZoom, RevealChalkboard ],
+
+// Optional libraries used to extend reveal.js
+dependencies: [
+]
+
+});
+</script>
+</body>
+</html>

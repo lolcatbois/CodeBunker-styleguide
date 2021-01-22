@@ -1,0 +1,50 @@
+#+title:     CodeBunker
+#+subtitle:  Description of Stylegudie
+#+author:    Simon Sölder | Felix Macho
+#+email:     soelder@hotmail.com
+#+OPTIONS: toc:nil reveal_width:1400 reveal_height:1000
+#+REVEAL_ROOT: https://cdn.jsdelivr.net/npm/reveal.js
+#+REVEAL_VERSION: 4
+#+REVEAL_ADD_PLUGIN: chalkboard RevealChalkboard https://cdn.jsdelivr.net/gh/rajgoel/reveal.js-plugins/chalkboard/plugin.js
+#+REVEAL_THEME: blood
+#+REVEAL_TRANS: slide
+
+* About
+** Description
+Eine CRUD Social Media Cloud Plattform für Studierende der FHS zum einfachen tauschen („sharen“) von Assets, Code, Snippets, Tips, Dateien zwischen Studenten. Filterungen mit Tags/Kategorien, welche entweder für interessante Thematiken oder Studienfächer zuständig sind und damit verbundene smarte Vorschläge.
+** Target Group
+Students of the FH Salzburg. The application will mostly be used by students of the more technical- and design-oriented course of studies. (MMA, MMT, ITS)
+
+* Requirements for the styleguide
+** Typography
+Describe various aspects of the projects typography.
+- font families
+- font sizes, weight, line-height,...
+- define for each text-element (=h1=, =h2=,...)
+** Colors
+Set a color scheme.
+- HEX Values
+- RGB Values
+** Interactive Components
+Describe components that the user can interact with.
+- buttons
+- navigation
+- input
+- ...
+** Framework
+We will be using SCSS.
+- (S)CSS Normalize
+- probably BEM naming convention
+- no additonal CSS Frameworks
+** Animations
+Describe basic animations for buttons, navigation,...
+** Emotions and Perspective
+Define what the application SHOULD be and what we are trying to achieve.
+What should the users feel when using the app?
+** Responsiveness
+Describe various aspects that help in creating a consistens layout across all supported devices (breakpoints,...)
+** File Structure
+One main scss file where multiple partials are imported. Each partial describes a different category.
+- =_fonts.scss=
+- =_mixins.scss=
+- ...
