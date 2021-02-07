@@ -1,0 +1,90 @@
+@import "../variables";
+
+.tag {
+  cursor: pointer;
+  font-family: $heading;
+  padding: 0.3rem 1.5rem;
+  border: solid 2px $background-sexy;
+  border-radius: 0.25rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0.5rem;
+  background-color: $background-light;
+  filter: drop-shadow(0 0.2rem 0.15rem $background-sexy);
+  text-decoration: none;
+  color: black;
+  transition: ease-in-out 0.25s;
+  font-size: 1.3rem;
+  p {
+    text-align: center;
+  }
+
+  &:hover {
+    border-color: $highlight;
+    filter: drop-shadow(0 0.2rem 0.15rem $highlight);
+    background-color: $background-sexy;
+    color: white;
+
+    img {
+      filter: invert(1);
+    }
+
+    transform: scale(1.1);
+  }
+}
+.owned {
+  background-color: $highlight;
+  transition: none;
+  &:hover {
+    border: solid 2px $background-sexy;
+    background-color: $highlight;
+    color: $background-sexy;
+    filter: drop-shadow(0 0.2rem 0.15rem $background-sexy);
+  }
+}
+
+.submit {
+  cursor: pointer;
+  filter: drop-shadow(0 0.15rem 0.25rem $background-sexy);
+  text-transform: uppercase;
+  padding: 0.5rem 2rem;
+  background-color: $highlight;
+  border: solid 0.15rem $background-sexy;
+  border-radius: 0.25rem;
+  font-family: $heading;
+  font-size: $size-heading;
+  transition: transform 0.5s ease-in-out;
+
+  &.small {
+    font-size: $size-heading-small;
+    padding: 0.3rem 1.5rem;
+  }
+
+  &.extra-small {
+    font-size: $size-heading-small;
+    padding: 0.1rem 1.3rem;
+  }
+
+  &:focus {
+    border: solid 0.25rem $highlight;
+    background-color: $background-sexy;
+    color: white;
+    filter: drop-shadow(0 0.15rem 0.25rem $highlight);
+  }
+  &:hover {
+    transform: scale(1.07);
+  }
+}
+
+.tag-small {
+  //list element
+  width: auto;
+  align-self: center;
+  margin: 0.5rem;
+  background-color: white;
+  padding: 0.25rem 0.5rem 0.25rem 0.5rem;
+  border-radius: 0.35rem;
+  outline: none;
+  border: solid 1px black;
+}

@@ -1,13 +1,21 @@
+///////////////////////////////////////////////////////////////////////////////
+//                           CodeBunker Styleguide                           //
+///////////////////////////////////////////////////////////////////////////////
+
 @import "reset";
 @import "variables";
 @import url("https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500;700&family=Montserrat:wght@700&display=swap");
+
+// General Rules //////////////////////////////////////////////////////////////
 .is-active-link {
   color: black;
-  font-weight: bold;
 
   &::before {
     content: "> ";
+  }
+  &::after {
+    content: " <";
   }
 }
 
@@ -17,6 +25,7 @@ a,
 em {
   font-family: $text;
   font-size: $size-text;
+  font-weight: 500;
 }
 
 h1 {
@@ -47,6 +56,7 @@ h3 {
   grid-template-rows: 100%;
 }
 
+// Navigation /////////////////////////////////////////////////////////////////
 .nav-wrapper {
   background-color: $background-dark;
   height: 100%;
@@ -58,6 +68,7 @@ h3 {
   h3,
   p,
   a,
+  pre,
   span {
     color: black;
   }
@@ -66,17 +77,29 @@ h3 {
     justify-content: flex-start;
     align-items: center;
     flex-direction: column;
-    background-color: $highlight;
     padding: 20px 20px;
   }
   .styleguide-nav {
     padding: 10px 20px;
+    display: flex;
+    justify-content: flexstart;
+    align-items: center;
+    font-family: $heading;
+    flex-direction: column;
+    list-style: none;
     li {
       list-style: none;
+      width: 100%;
       margin-top: 10px;
       a {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+
         text-decoration: none;
         font-size: $size-heading-small;
+        width: 100%;
+        font-weight: 600;
       }
     }
   }
@@ -85,14 +108,41 @@ h3 {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    background-color: $highlight;
+    background-color: $background-dark;
   }
 }
-
+// PAGE ///////////////////////////////////////////////////////////////////////
 .page {
   color: white;
   overflow-y: scroll;
-  padding: 20px;
-  padding-left: 40px;
+  padding: 20px 25%;
   max-height: 100vh;
+
+  section {
+    &:first-of-type {
+      margin-top: 0;
+    }
+    p {
+      font-size: 1.2rem;
+      margin-top: 20px;
+    }
+    margin-top: 30px;
+  }
+}
+
+// MODULE /////////////////////////////////////////////////////////////////////
+.module {
+  height: auto;
+  border-radius: 20px;
+  padding: 30px;
+  width: 80%;
+  background-color: $background-dark;
+  display: flex;
+  justify-content: space-around;
+  align-items: space-around;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 40px;
+  margin-bottom: 40px;
+  flex-wrap: wrap;
 }

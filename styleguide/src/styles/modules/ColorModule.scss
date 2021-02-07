@@ -1,0 +1,41 @@
+@import "../variables";
+
+.color-module {
+  row-gap: 30px;
+  div {
+    padding: 20px;
+    border: 3px solid black;
+    border-radius: 10px;
+    font-size: 1.4rem;
+    display: flex;
+    flex-basis: 40%;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    transition: 0.5s ease all;
+
+    &:hover {
+      flex-basis: 50%;
+    }
+  }
+  .color1 {
+    background-color: $background-sexy;
+  }
+
+  .color2 {
+    background-color: $background-light;
+    color: black;
+  }
+  .color3 {
+    background-color: $highlight;
+    color: black;
+  }
+  .color4 {
+    background-color: $secondary;
+    color: black;
+  }
+  .color5 {
+    background-color: $background-dark;
+    color: black;
+  }
+}

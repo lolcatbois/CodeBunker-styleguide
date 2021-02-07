@@ -1,5 +1,9 @@
 import './styles/App.scss';
 import React from "react";
+import Introduction from "./components/pages/Introduction";
+import Colors from "./components/pages/Colors";
+import Typography from "./components/pages/Typography";
+import Buttons from "./components/pages/Buttons";
 import {
   BrowserRouter as Router,
   Switch,
@@ -13,9 +17,8 @@ export default function App() {
   return (
     <Router>
       <nav className="nav-wrapper">
-        <div className="title">
-          <h1>
-            CodeBunker
+        <div className="title"> <h1>
+          CodeBunker
         </h1>
           <p>
             Style Guide
@@ -50,13 +53,16 @@ export default function App() {
 
       <Switch>
         <Route exact path="/">
-          <Home />
+          <Introduction />
         </Route>
-        <Route path="/about">
-          <About />
+        <Route path="/colors">
+          <Colors />
         </Route>
-        <Route path="/dashboard">
-          <Dashboard />
+        <Route path="/typography">
+          <Typography />
+        </Route>
+        <Route path="/buttons">
+          <Buttons />
         </Route>
       </Switch>
     </Router>
@@ -66,46 +72,3 @@ export default function App() {
 // You can think of these components as "pages"
 // in your app.
 
-function Home() {
-  return (
-    <div className="page">
-      <h1>Introduction</h1>
-      <p>
-        Lorem Impsum
-        Lorem Impsum
-        Lorem Impsum
-        Lorem Impsum
-        Lorem Impsum
-        Lorem Impsum
-        Lorem Impsum
-        Lorem Impsum
-        Lorem Impsum
-        Lorem Impsum
-        Lorem Impsum
-        Lorem Impsum
-      </p>
-      <code>
-        Lorem Impsum
-        Lorem Impsum
-        Lorem Impsum
-        Lorem Impsum
-      </code>
-    </div>
-  );
-}
-
-function About() {
-  return (
-    <div className="page">
-      <h2>About</h2>
-    </div>
-  );
-}
-
-function Dashboard() {
-  return (
-    <div className="page">
-      <h2>Dashboard</h2>
-    </div>
-  );
-}

@@ -1,0 +1,22 @@
+@import "../variables";
+
+.fonts-module {
+  color: black;
+  font-size: 2rem;
+  .fira {
+    font-family: "Fira Code";
+  }
+  .montserrat {
+    font-family: "Montserrat";
+  }
+}
+
+.fontsize-module {
+  color: black;
+  .headings {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+  }
+}
