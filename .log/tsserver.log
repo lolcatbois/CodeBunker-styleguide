@@ -5211,3 +5211,53 @@ Info 4811 [23:20:46.295] Format host information updated
 Info 4812 [23:20:46.508] Starting updateGraphWorker: Project: /dev/null/inferredProject5*
 Info 4813 [23:20:46.549] Finishing updateGraphWorker: Project: /dev/null/inferredProject5* Version: 884 structureChanged: false Elapsed: 41.40300799906254ms
 Info 4814 [23:20:46.549] Different program with same set of files:: structureIsReused:: 2
+Info 4815 [23:31:38.253] DirectoryWatcher:: Triggered with /home/simon/development/CodeBunker-styleguide/styleguide/node_modules :: WatchInfo: /home/simon/development/CodeBunker-styleguide/styleguide/node_modules 1 undefined Project:  WatchType: node_modules for closed script infos in them
+Info 4816 [23:31:38.332] Elapsed:: 79.42052000015974ms DirectoryWatcher:: Triggered with /home/simon/development/CodeBunker-styleguide/styleguide/node_modules :: WatchInfo: /home/simon/development/CodeBunker-styleguide/styleguide/node_modules 1 undefined Project:  WatchType: node_modules for closed script infos in them
+Info 4817 [23:31:38.332] DirectoryWatcher:: Triggered with /home/simon/development/CodeBunker-styleguide/styleguide/node_modules :: WatchInfo: /home/simon/development/CodeBunker-styleguide/styleguide/node_modules 1 undefined Project: /dev/null/inferredProject5* WatchType: Failed Lookup Locations
+Info 4818 [23:31:38.332] Elapsed:: 0.11722899973392487ms DirectoryWatcher:: Triggered with /home/simon/development/CodeBunker-styleguide/styleguide/node_modules :: WatchInfo: /home/simon/development/CodeBunker-styleguide/styleguide/node_modules 1 undefined Project: /dev/null/inferredProject5* WatchType: Failed Lookup Locations
+Info 4819 [23:31:38.597] Starting updateGraphWorker: Project: /dev/null/autoImportProviderProject5*
+Info 4820 [23:31:39.404] Finishing updateGraphWorker: Project: /dev/null/autoImportProviderProject5* Version: 2 structureChanged: true Elapsed: 807.3075819984078ms
+Info 4821 [23:31:39.405] Project '/dev/null/autoImportProviderProject5*' (AutoImportProvider)
+Info 4822 [23:31:39.405] 	Files (97)
+
+Info 4823 [23:31:39.405] -----------------------------------------------
+Info 4824 [23:31:39.411] Starting updateGraphWorker: Project: /dev/null/inferredProject5*
+Info 4825 [23:31:39.927] Finishing updateGraphWorker: Project: /dev/null/inferredProject5* Version: 885 structureChanged: true Elapsed: 516.4625799953938ms
+Info 4826 [23:31:39.927] Project '/dev/null/inferredProject5*' (Inferred)
+Info 4827 [23:31:39.927] 	Files (303)
+
+Info 4828 [23:31:39.927] -----------------------------------------------
+Info 4829 [23:31:39.927] Project '/dev/null/autoImportProviderProject5*' (AutoImportProvider)
+Info 4830 [23:31:39.928] 	Files (97)
+
+Info 4831 [23:31:39.928] -----------------------------------------------
+Info 4832 [23:31:40.282] Starting updateGraphWorker: Project: /dev/null/inferredProject5*
+Info 4833 [23:31:40.284] Finishing updateGraphWorker: Project: /dev/null/inferredProject5* Version: 886 structureChanged: false Elapsed: 2.1270019933581352ms
+Info 4834 [23:31:40.719] FileWatcher:: Triggered with /home/simon/development/CodeBunker-styleguide/styleguide/src/components/modules/TypoModules.jsx 2:: WatchInfo: /home/simon/development/CodeBunker-styleguide/styleguide/src/components/modules/TypoModules.jsx 500 undefined Project:  WatchType: Closed Script info
+Info 4835 [23:31:40.720] Elapsed:: 0.3748769983649254ms FileWatcher:: Triggered with /home/simon/development/CodeBunker-styleguide/styleguide/src/components/modules/TypoModules.jsx 2:: WatchInfo: /home/simon/development/CodeBunker-styleguide/styleguide/src/components/modules/TypoModules.jsx 500 undefined Project:  WatchType: Closed Script info
+Info 4836 [23:31:40.720] FileWatcher:: Triggered with /home/simon/development/CodeBunker-styleguide/styleguide/src/components/pages/Introduction.jsx 2:: WatchInfo: /home/simon/development/CodeBunker-styleguide/styleguide/src/components/pages/Introduction.jsx 500 undefined Project:  WatchType: Closed Script info
+Info 4837 [23:31:40.720] Elapsed:: 0.07809899747371674ms FileWatcher:: Triggered with /home/simon/development/CodeBunker-styleguide/styleguide/src/components/pages/Introduction.jsx 2:: WatchInfo: /home/simon/development/CodeBunker-styleguide/styleguide/src/components/pages/Introduction.jsx 500 undefined Project:  WatchType: Closed Script info
+Info 4838 [23:31:40.720] FileWatcher:: Triggered with /home/simon/development/CodeBunker-styleguide/styleguide/src/components/modules/ColorModules.jsx 2:: WatchInfo: /home/simon/development/CodeBunker-styleguide/styleguide/src/components/modules/ColorModules.jsx 500 undefined Project:  WatchType: Closed Script info
+Info 4839 [23:31:40.720] Elapsed:: 0.20581799745559692ms FileWatcher:: Triggered with /home/simon/development/CodeBunker-styleguide/styleguide/src/components/modules/ColorModules.jsx 2:: WatchInfo: /home/simon/development/CodeBunker-styleguide/styleguide/src/components/modules/ColorModules.jsx 500 undefined Project:  WatchType: Closed Script info
+Info 4840 [23:31:40.720] FileWatcher:: Triggered with /home/simon/development/CodeBunker-styleguide/styleguide/package.json 2:: WatchInfo: /home/simon/development/CodeBunker-styleguide/styleguide/package.json 250 undefined Project:  WatchType: package.json file for import suggestions
+Info 4841 [23:31:40.720] Elapsed:: 0.24526799470186234ms FileWatcher:: Triggered with /home/simon/development/CodeBunker-styleguide/styleguide/package.json 2:: WatchInfo: /home/simon/development/CodeBunker-styleguide/styleguide/package.json 250 undefined Project:  WatchType: package.json file for import suggestions
+Info 4842 [23:31:41.284] DirectoryWatcher:: Triggered with /home/simon/development/CodeBunker-styleguide/node_modules/@types :: WatchInfo: /home/simon/development/CodeBunker-styleguide/node_modules/@types 1 undefined Project: /dev/null/inferredProject5* WatchType: Type roots
+Info 4843 [23:31:41.284] Elapsed:: 0.15452900528907776ms DirectoryWatcher:: Triggered with /home/simon/development/CodeBunker-styleguide/node_modules/@types :: WatchInfo: /home/simon/development/CodeBunker-styleguide/node_modules/@types 1 undefined Project: /dev/null/inferredProject5* WatchType: Type roots
+Info 4844 [23:31:41.284] DirectoryWatcher:: Triggered with /home/simon/development/CodeBunker-styleguide/node_modules :: WatchInfo: /home/simon/development/CodeBunker-styleguide/node_modules 1 undefined Project: /dev/null/autoImportProviderProject5* WatchType: Failed Lookup Locations
+Info 4845 [23:31:41.284] Elapsed:: 0.013560004532337189ms DirectoryWatcher:: Triggered with /home/simon/development/CodeBunker-styleguide/node_modules :: WatchInfo: /home/simon/development/CodeBunker-styleguide/node_modules 1 undefined Project: /dev/null/autoImportProviderProject5* WatchType: Failed Lookup Locations
+Info 4846 [23:31:41.284] DirectoryWatcher:: Triggered with /home/simon/development/CodeBunker-styleguide/node_modules :: WatchInfo: /home/simon/development/CodeBunker-styleguide/node_modules 1 undefined Project: /dev/null/inferredProject5* WatchType: Failed Lookup Locations
+Info 4847 [23:31:41.284] Elapsed:: 0.01118999719619751ms DirectoryWatcher:: Triggered with /home/simon/development/CodeBunker-styleguide/node_modules :: WatchInfo: /home/simon/development/CodeBunker-styleguide/node_modules 1 undefined Project: /dev/null/inferredProject5* WatchType: Failed Lookup Locations
+Info 4848 [23:31:41.284] DirectoryWatcher:: Triggered with /home/simon/development/CodeBunker-styleguide/node_modules :: WatchInfo: /home/simon/development/CodeBunker-styleguide/node_modules 1 undefined Project:  WatchType: node_modules for closed script infos in them
+Info 4849 [23:31:41.285] Elapsed:: 0.8580930009484291ms DirectoryWatcher:: Triggered with /home/simon/development/CodeBunker-styleguide/node_modules :: WatchInfo: /home/simon/development/CodeBunker-styleguide/node_modules 1 undefined Project:  WatchType: node_modules for closed script infos in them
+Info 4850 [23:31:41.536] Starting updateGraphWorker: Project: /dev/null/inferredProject5*
+Info 4851 [23:31:41.688] Finishing updateGraphWorker: Project: /dev/null/inferredProject5* Version: 887 structureChanged: true Elapsed: 152.05437899380922ms
+Info 4852 [23:31:41.688] Different program with same set of files:: structureIsReused:: 0
+Info 4853 [23:31:42.542] Starting updateGraphWorker: Project: /dev/null/autoImportProviderProject5*
+Info 4854 [23:31:42.556] Finishing updateGraphWorker: Project: /dev/null/autoImportProviderProject5* Version: 3 structureChanged: true Elapsed: 13.6030940040946ms
+Info 4855 [23:31:42.556] Project '/dev/null/autoImportProviderProject5*' (AutoImportProvider)
+Info 4856 [23:31:42.556] 	Files (0)
+
+Info 4857 [23:31:42.556] -----------------------------------------------
+Info 4858 [23:31:44.786] Before ensureProjectForOpenFiles:
+Info 4859 [23:31:44.786] After ensureProjectForOpenFiles:
+Info 4860 [23:31:44.786] got projects updated in background, updating diagnostics for /home/simon/development/CodeBunker-styleguide/styleguide/src/App.js,/home/simon/development/CodeBunker-styleguide/styleguide/src/components/pages/Buttons.jsx,/home/simon/development/CodeBunker-styleguide/styleguide/src/components/modules/ButtonModules.jsx,/home/simon/development/CodeBunker-styleguide/styleguide/src/components/pages/Colors.jsx,/home/simon/development/CodeBunker-styleguide/styleguide/src/components/pages/Typography.jsx
