@@ -1,0 +1,31 @@
+Info 0    [13:13:17.826] Starting TS Server
+Info 1    [13:13:17.826] Version: 4.1.3
+Info 2    [13:13:17.826] Arguments: /home/simon/.nvm/versions/node/v14.7.0/bin/node /home/simon/.emacs.d/.local/etc/lsp/npm/typescript/bin/tsserver --logFile /home/simon/development/CodeBunker-styleguide/styleguide/.log/tsserver.log --logVerbosity info --cancellationPipeName /tmp/ddd76c6f8117751dc9fab5194d8b0ce1/tscancellation*
+Info 3    [13:13:17.826] Platform: linux NodeVersion: 14 CaseSensitive: true
+Info 4    [13:13:17.826] ServerMode: undefined syntaxOnly: false hasUnknownServerMode: undefined
+Info 5    [13:13:20.053] Search path: /home/simon/development/CodeBunker-styleguide/styleguide/src/components/pages
+Info 6    [13:13:20.055] For info: /home/simon/development/CodeBunker-styleguide/styleguide/src/components/pages/Introduction.js :: No config files found.
+Info 7    [13:13:20.059] Starting updateGraphWorker: Project: /dev/null/inferredProject1*
+Info 8    [13:13:22.588] Finishing updateGraphWorker: Project: /dev/null/inferredProject1* Version: 1 structureChanged: true Elapsed: 2528.4661970000016ms
+Info 9    [13:13:22.588] Project '/dev/null/inferredProject1*' (Inferred)
+Info 10   [13:13:22.588] 	Files (138)
+
+Info 11   [13:13:22.588] -----------------------------------------------
+Info 12   [13:13:22.617] Starting updateGraphWorker: Project: /dev/null/autoImportProviderProject1*
+Info 13   [13:13:23.753] Finishing updateGraphWorker: Project: /dev/null/autoImportProviderProject1* Version: 1 structureChanged: true Elapsed: 1136.660057999994ms
+Info 14   [13:13:23.753] Project '/dev/null/autoImportProviderProject1*' (AutoImportProvider)
+Info 15   [13:13:23.753] 	Files (90)
+
+Info 16   [13:13:23.753] -----------------------------------------------
+Info 17   [13:13:23.755] Before ensureProjectForOpenFiles:
+Info 18   [13:13:23.756] After ensureProjectForOpenFiles:
+Info 19   [13:13:23.756] got projects updated in background, updating diagnostics for /home/simon/development/CodeBunker-styleguide/styleguide/src/components/pages/Introduction.js
+Info 20   [13:13:23.822] Starting updateGraphWorker: Project: /dev/null/inferredProject1*
+Info 21   [13:13:23.823] Finishing updateGraphWorker: Project: /dev/null/inferredProject1* Version: 2 structureChanged: false Elapsed: 1.2506700000085402ms
+Info 22   [13:13:24.994] Format host information updated
+Info 23   [13:13:25.212] Starting updateGraphWorker: Project: /dev/null/inferredProject1*
+Info 24   [13:13:25.225] Finishing updateGraphWorker: Project: /dev/null/inferredProject1* Version: 3 structureChanged: false Elapsed: 13.429755999997724ms
+Info 25   [13:13:25.225] Different program with same set of files:: structureIsReused:: 2
+Info 26   [13:13:26.323] Before ensureProjectForOpenFiles:
+Info 27   [13:13:26.323] After ensureProjectForOpenFiles:
+Info 28   [13:13:26.323] got projects updated in background, updating diagnostics for /home/simon/development/CodeBunker-styleguide/styleguide/src/components/pages/Introduction.js
