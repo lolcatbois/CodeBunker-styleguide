@@ -1,9 +1,5 @@
 import './styles/App.scss';
 import React from "react";
-import Introduction from "./components/pages/Introduction";
-import Colors from "./components/pages/Colors";
-import Typography from "./components/pages/Typography";
-import Buttons from "./components/pages/Buttons";
 import {
   BrowserRouter as Router,
   Switch,
@@ -12,10 +8,19 @@ import {
   NavLink
 } from "react-router-dom";
 
+// import the pages
+import Introduction from "./components/pages/Introduction";
+import Colors from "./components/pages/Colors";
+import Typography from "./components/pages/Typography";
+import Forms from "./components/pages/Forms";
+import Buttons from "./components/pages/Buttons";
+
 
 export default function App() {
   return (
     <Router>
+
+      {/* Left Navigation */}
       <nav className="nav-wrapper">
         <div className="title"> <h1>
           CodeBunker
@@ -51,6 +56,7 @@ export default function App() {
         </div>
       </nav>
 
+      {/* Switch/Router */}
       <Switch>
         <Route exact path="/">
           <Introduction />
@@ -64,11 +70,10 @@ export default function App() {
         <Route path="/buttons">
           <Buttons />
         </Route>
+        <Route path="/forms">
+          <Forms />
+        </Route>
       </Switch>
     </Router>
   );
 }
-
-// You can think of these components as "pages"
-// in your app.
-
