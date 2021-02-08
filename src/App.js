@@ -4,7 +4,6 @@ import {
   BrowserRouter as Router,
   Switch,
   Route,
-  Link,
   NavLink
 } from "react-router-dom";
 
@@ -19,7 +18,6 @@ import Buttons from "./components/pages/Buttons";
 export default function App() {
   return (
     <Router>
-
       {/* Left Navigation */}
       <nav className="nav-wrapper">
         <div className="title"> <h1>
@@ -56,7 +54,7 @@ export default function App() {
         </div>
       </nav>
 
-      {/* Switch/Router */}
+      {/* Switch */}
       <Switch>
         <Route exact path="/">
           <Introduction />

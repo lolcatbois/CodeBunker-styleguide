@@ -1,7 +1,5 @@
-import SyntaxHighlighter from "react-syntax-highlighter";
-import { gruvboxDark } from 'react-syntax-highlighter/dist/esm/styles/hljs';
 import { ColorModule } from "../modules/ColorModules";
-import Collapsible from "react-collapsible";
+import CollapsibleCode from "../modules/CollapsibleCode";
 
 const scssColors = `$accent: #91a18d;
 $highlight: #e6c973;
@@ -25,11 +23,7 @@ export default function Colors() {
                 <h2>Color Scheme</h2>
                 <ColorModule />
                 <h3>SCSS Code</h3>
-                <Collapsible trigger="> SHOW" triggerWhenOpen="< CLOSE">
-                    <SyntaxHighlighter showLineNumber style={gruvboxDark} language="scss">
-                        {scssColors}
-                    </SyntaxHighlighter>
-                </Collapsible>
+                <CollapsibleCode code={scssColors} language="scss" />
             </section>
         </div>
     );

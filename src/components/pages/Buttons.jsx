@@ -1,16 +1,11 @@
-import SyntaxHighlighter from "react-syntax-highlighter";
-import { gruvboxDark } from 'react-syntax-highlighter/dist/esm/styles/hljs';
 import { SubmitButton, TagButton } from "../modules/ButtonModules";
-import Collapsible from "react-collapsible";
+import CollapsibleCode from "../modules/CollapsibleCode";
 
 export default function Buttons() {
-    const submitButtonHTML = `<input type="submit" class="submit small">`
-    const submitButtonERB = `<%= f.submit "submit", class: "submit" %>`
+  const submitButtonHTML = `<input type="submit" class="submit small">`
+  const tagButtonHTML = `<a href="#" class="tag"></a>"`
 
-    const tagButtonHTML = `<a href="#" class="tag"></a>"`
-    const tagButtonERB = `<%= link_to tag, remove_tag_user_path(:tagname => tag.to_s, id: current_user),  class: 'tag owned', remote: true, method: :put %>`
-
-    const submitButtonSCSS = `.submit {
+  const submitButtonSCSS = `.submit {
     cursor: pointer;
     filter: drop-shadow(0 0.15rem 0.25rem $background-sexy);
     text-transform: uppercase;
@@ -43,7 +38,7 @@ export default function Buttons() {
     }
     }`
 
-    const tagButtonSCSS = `.tag {
+  const tagButtonSCSS = `.tag {
   cursor: pointer;
   font-family: $heading;
   padding: 0.3rem 1.5rem;
@@ -89,44 +84,32 @@ export default function Buttons() {
 
 `
 
-    return (
-        <div className="page">
-            <section>
-                <h1>BUTTONS</h1>
-                <p>We differiante two types of buttons: Submit-Buttons and Tag-Buttons</p>
-            </section>
-            <section>
-                <h2>Submit Button</h2>
-                <p>This should be used in all forms.
-                It means that an action will follow the click,
+  return (
+    <div className="page">
+      <section>
+        <h1>BUTTONS</h1>
+        <p>We differiante two types of buttons: Submit-Buttons and Tag-Buttons</p>
+      </section>
+      <section>
+        <h2>Submit Button</h2>
+        <p>This should be used in all forms.
+        It means that an action will follow the click,
                 possibly with a redirect or page reload</p>
-                <SubmitButton />
-                <h3>HTML</h3>
-                <SyntaxHighlighter showLineNumber style={gruvboxDark} language="erb">
-                    {submitButtonHTML}
-                </SyntaxHighlighter>
-                <h3>SCSS</h3>
-                <Collapsible trigger="> SHOW" triggerWhenOpen="< CLOSE">
-                    <SyntaxHighlighter showLineNumber style={gruvboxDark} language="scss">
-                        {submitButtonSCSS}
-                    </SyntaxHighlighter>
-                </Collapsible>
-            </section>
-            <section>
-                <h2>Tag Button</h2>
-                <p>This button can be toggled between two states.</p>
-                <TagButton />
-                <h3>HTML</h3>
-                <SyntaxHighlighter showLineNumber style={gruvboxDark} language="erb">
-                    {tagButtonHTML}
-                </SyntaxHighlighter>
-                <h3>SCSS</h3>
-                <Collapsible trigger="> SHOW" triggerWhenOpen="< CLOSE">
-                    <SyntaxHighlighter showLineNumber style={gruvboxDark} language="scss">
-                        {tagButtonSCSS}
-                    </SyntaxHighlighter>
-                </Collapsible>
-            </section>
-        </div>
-    );
+        <SubmitButton />
+        <h3>HTML</h3>
+        <CollapsibleCode code={submitButtonHTML} language="erb" />
+        <h3>SCSS</h3>
+        <CollapsibleCode code={submitButtonSCSS} language="scss" />
+      </section>
+      <section>
+        <h2>Tag Button</h2>
+        <p>This button can be toggled between two states.</p>
+        <TagButton />
+        <h3>HTML</h3>
+        <CollapsibleCode code={tagButtonHTML} language="erb" />
+        <h3>SCSS</h3>
+        <CollapsibleCode code={tagButtonSCSS} language="scss" />
+      </section>
+    </div>
+  );
 }

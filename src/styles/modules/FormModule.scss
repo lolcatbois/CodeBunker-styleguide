@@ -1,0 +1,212 @@
+@import "../variables";
+@import "../mixin";
+
+.form-module {
+  background-color: $secondary;
+}
+.devise-form {
+  display: grid;
+  border-radius: 10px;
+  grid-gap: 15px;
+  height: auto;
+  width: 100%;
+  min-width: 30%;
+  margin: auto;
+  color: $background-sexy;
+  background-color: $secondary;
+  padding: 20px 10px;
+
+  h2 {
+    text-align: center;
+    font-size: 2rem;
+    min-width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    border-bottom: 3px solid black;
+  }
+
+  .field {
+    justify-self: center;
+    width: 70%;
+
+    label {
+      font-family: $heading;
+      font-size: 1.2rem;
+    }
+    input {
+      outline: none;
+      border: 2px solid black;
+      border-radius: 5px;
+      font-family: $text;
+      letter-spacing: 2px;
+      font-weight: bold;
+      font-size: 1.2rem;
+      width: 100%;
+      padding: 10px;
+    }
+
+    input[type="checkbox"] {
+      width: auto;
+      margin-left: 30px;
+    }
+  }
+  .actions {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+
+    a {
+      color: $highlight;
+      color: black;
+      font-size: 1.2rem;
+      font-family: $heading;
+      margin-top: 10px;
+    }
+
+    p {
+      font-size: $size-heading-small;
+      margin-top: 10px;
+    }
+  }
+}
+
+.content-form {
+  width: auto;
+  max-width: 100%;
+  height: 100%;
+  display: grid;
+  padding: 2rem 0;
+  grid-template-columns: 35% 32.5% 32.5%;
+  grid-template-rows: 20% 40% 15% 10%;
+  grid-row-gap: 5%;
+  grid-template-areas:
+    "post-title post-file post-file"
+    "post-content-text post-content-text post-content-text"
+    "post-tags post-tags post-tags"
+    "post-submit post-submit post-submit";
+
+  label {
+    color: $background-sexy;
+    font-size: 1.3rem;
+  }
+  .field_title {
+    align-self: center;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-self: left;
+    grid-area: post-title;
+    height: 100%;
+    width: 75%;
+    justify-content: center;
+
+    #post_title {
+      background-color: $background-light;
+      border: solid 0.25rem $background-light;
+      border-radius: 0.25rem;
+      height: 35%;
+      width: 100%;
+      margin-top: 0.25rem;
+      filter: drop-shadow(0 0.25rem 0.25em $background-sexy);
+    }
+  }
+  .field_content_text {
+    grid-area: post-content-text;
+    display: flex;
+    flex-flow: column nowrap;
+    height: 100%;
+    width: 100%;
+    justify-content: center;
+
+    #post_content_text {
+      background-color: $background-light;
+      border: solid 0.25rem $background-light;
+      border-radius: 0.25rem;
+      height: 75%;
+      width: 100%;
+      margin-top: 0.25rem;
+      filter: drop-shadow(0 0.25rem 0.25rem $background-sexy);
+    }
+  }
+  .field_content_tags {
+    grid-area: post-tags;
+    display: flex;
+    flex-flow: column nowrap;
+    height: 100%;
+    width: 100%;
+    justify-content: center;
+    #post_tag_list {
+      background-color: $background-light;
+      border: solid 0.25rem $background-light;
+      border-radius: 0.25rem;
+      height: 75%;
+      width: 100%;
+      margin-top: 0.25rem;
+      filter: drop-shadow(0 0.25rem 0.25rem $background-sexy);
+    }
+  }
+  .content {
+    grid-area: post-file;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: end;
+
+    label {
+      padding-right: 1rem;
+      @include mobile {
+        padding-right: 0.5rem;
+        margin-left: 0;
+        font-size: 90%;
+        align-self: center;
+      }
+    }
+    .field_content_image {
+      @include tablet {
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        margin-left: 3rem;
+      }
+      @include mobile {
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        margin-left: 0;
+      }
+      display: flex;
+      justify-content: center;
+      input {
+        cursor: pointer;
+        margin-top: 0.25rem;
+        filter: drop-shadow(0 0.25rem 0.25rem $background-sexy);
+      }
+    }
+    .field_content_file {
+      @include tablet {
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        margin-left: 3.75rem;
+      }
+      @include mobile {
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        margin-left: 0.75rem;
+      }
+      display: flex;
+      justify-content: center;
+
+      input {
+        cursor: pointer;
+        margin-top: 0.25rem;
+        filter: drop-shadow(0 0.25rem 0.25rem $background-sexy);
+      }
+    }
+  }
+
+  .actions {
+    grid-area: post-submit;
+    margin: auto;
+  }
+}

@@ -21,7 +21,6 @@
 
 p,
 span,
-a,
 em {
   font-family: $text;
   font-size: $size-text;
@@ -95,6 +94,7 @@ h3 {
         display: flex;
         justify-content: space-around;
         align-items: center;
+        outline: none;
 
         text-decoration: none;
         font-size: $size-heading-small;
@@ -138,6 +138,7 @@ h3 {
     }
 
     .Collapsible {
+      padding: 10px;
       span {
         transition: 0.3s ease all;
         color: $highlight;
