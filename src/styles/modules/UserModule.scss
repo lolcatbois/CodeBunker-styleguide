@@ -1,0 +1,69 @@
+@import "../variables";
+@import "../mixin";
+
+.single-user-container {
+  width: 100%;
+  height: 100%;
+  margin: 20px;
+  background-color: $background-dark;
+  border-radius: 10px;
+  padding: 10px;
+  display: grid;
+  grid-template-rows: 100%;
+  grid-template-columns: 3fr 6fr;
+  text-decoration: none;
+  color: black;
+  grid-template-areas: "avatar content";
+  transition: all 0.5s ease;
+
+  @include tablet {
+    margin: 15px;
+    max-width: 40%;
+  }
+
+  @include mobile {
+    margin: 15px;
+    max-width: 100%;
+  }
+
+  &:hover {
+    background-color: $background-light;
+  }
+
+  .avatar {
+    grid-area: avatar;
+    max-width: 80%;
+    margin: auto;
+    border-radius: 50%;
+    border: black 5px solid;
+  }
+
+  .single-user-namewrapper {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+    grid-area: content;
+
+    & > span {
+      font-family: $heading;
+      font-size: 1.5rem;
+      text-align: center;
+    }
+
+    .single-user-links {
+      width: 80%;
+      display: flex;
+      justify-content: space-evenly;
+      align-items: center;
+
+      a {
+        width: 2rem;
+
+        &:hover {
+          transform: scale(1.1);
+        }
+      }
+    }
+  }
+}
