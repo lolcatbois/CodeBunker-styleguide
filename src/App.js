@@ -12,8 +12,8 @@ import Introduction from "./components/pages/Introduction";
 import Colors from "./components/pages/Colors";
 import Typography from "./components/pages/Typography";
 import Forms from "./components/pages/Forms";
+import Methodology from "./components/pages/Methodology";
 import Buttons from "./components/pages/Buttons";
-
 
 export default function App() {
   return (
@@ -30,7 +30,7 @@ export default function App() {
             <NavLink exact={true} to="/" activeClassName="is-active-link">Introduction</NavLink>
           </li>
           <li>
-            <NavLink to="/methodoloy" activeClassName="is-active-link">Methodology</NavLink>
+            <NavLink to="/methodology" activeClassName="is-active-link">Methodology</NavLink>
           </li>
           <li>
             <NavLink to="/colors" activeClassName="is-active-link">Colors</NavLink>
@@ -56,6 +56,9 @@ export default function App() {
       <Switch>
         <Route exact path="/">
           <Introduction />
+        </Route>
+        <Route path="/methodology">
+          <Methodology />
         </Route>
         <Route path="/colors">
           <Colors />
