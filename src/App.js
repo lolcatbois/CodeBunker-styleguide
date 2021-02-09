@@ -17,7 +17,7 @@ import Buttons from "./components/pages/Buttons";
 
 export default function App() {
   return (
-    <Router>
+    <Router basename={process.env.PUBLIC_URL}>
       {/* Left Navigation */}
       <nav className="nav-wrapper">
         <div className="title"> <h1>
