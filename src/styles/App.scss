@@ -8,17 +8,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500;700&family=Montserrat:wght@700&display=swap");
 
 // General Rules //////////////////////////////////////////////////////////////
-.is-active-link {
-  color: black;
-
-  &::before {
-    content: "> ";
-  }
-  &::after {
-    content: " <";
-  }
-}
-
 p,
 span,
 em {
@@ -51,25 +40,23 @@ h3 {
   min-height: 100vh;
   background-color: $background-sexy;
   display: grid;
-  grid-template-columns: 1fr 10fr;
+  grid-template-columns: 2fr 10fr;
   grid-template-rows: 100%;
 }
 
 // Navigation /////////////////////////////////////////////////////////////////
 .nav-wrapper {
-  background-color: $background-dark;
-  height: 100%;
-  display: grid;
-  grid-template-rows: 12% 82% 6%;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
 
-  h1,
   h2,
   h3,
   p,
   a,
   pre,
   span {
-    color: black;
+    color: white;
   }
   .title {
     display: flex;
@@ -77,54 +64,69 @@ h3 {
     align-items: center;
     flex-direction: column;
     padding: 20px 20px;
+    color: $highlight;
+    p {
+      font-weight: bold;
+    }
   }
   .styleguide-nav {
     padding: 10px 20px;
     display: flex;
-    justify-content: flexstart;
     align-items: center;
     font-family: $heading;
     flex-direction: column;
     list-style: none;
     li {
       list-style: none;
-      width: 100%;
       margin-top: 10px;
+      margin-left: 10px;
       a {
-        display: flex;
-        justify-content: space-around;
-        align-items: center;
         outline: none;
-
         text-decoration: none;
-        font-size: $size-heading-small;
-        width: 100%;
-        font-weight: 600;
+        font-family: $text;
+        font-size: $size-heading;
+        font-weight: 500;
+        &.is-active-link {
+          font-weight: bold;
+          color: $highlight;
+          // &::before {
+          //   content: "> ";
+          // }
+          // &::after {
+          //   content: " <";
+          // }
+        }
       }
     }
   }
   .authors {
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
     align-items: center;
-    flex-direction: column;
-    background-color: $background-dark;
   }
 }
 // PAGE ///////////////////////////////////////////////////////////////////////
 .page {
   color: white;
   overflow-y: scroll;
-  padding: 20px 25%;
+  padding-top: 20px;
+  padding-right: 40%;
   max-height: 100vh;
 
   section {
-    margin-top: 30px;
+    margin-top: 70px;
+    border-left: 3px solid $secondary;
+    padding-left: 30px;
 
     h1,
     h2,
     h3 {
       text-transform: uppercase;
+    }
+
+    h1,
+    h2 {
+      color: $secondary;
     }
     p {
       font-size: 1.2rem;
@@ -138,7 +140,39 @@ h3 {
     }
 
     .Collapsible {
-      padding: 10px;
+      .syntax-wrapper {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        pre {
+          width: 90%;
+          padding: 20px !important;
+          background-color: rgba($background-dark, 0.1) !important;
+          border-radius: 10px;
+          code {
+          }
+        }
+      }
+
+      padding: 20px;
+      .copy-field {
+        position: relative;
+      }
+      img {
+        transition: 0.3s ease all;
+        &:hover {
+          opacity: 1;
+          transform: scale(1.1);
+          cursor: pointer;
+        }
+        width: 2rem;
+        position: absolute;
+        filter: invert(1);
+        opacity: 0.5;
+        right: 3.5%;
+      }
       span {
         transition: 0.3s ease all;
         color: $highlight;
@@ -155,7 +189,8 @@ h3 {
 .module {
   height: auto;
   border-radius: 20px;
-  padding: 30px;
+  padding: 20px;
+  justify-self: center;
   width: 80%;
   background-color: $background-dark;
   display: flex;
@@ -171,5 +206,6 @@ h3 {
   h2,
   h3 {
     text-transform: none !important;
+    color: black !important;
   }
 }

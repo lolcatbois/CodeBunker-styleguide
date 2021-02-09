@@ -1,7 +1,6 @@
-import SyntaxHighlighter from "react-syntax-highlighter";
 import { gruvboxDark } from "react-syntax-highlighter/dist/esm/styles/hljs";
 import { Fonts, FontSizes } from "../modules/TypoModules";
-import Collapsible from "react-collapsible";
+import CollapsibleCode from "../modules/CollapsibleCode";
 
 const scssFontImport = `@import url("https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500;700&family=Montserrat:wght@700&display=swap");`;
 
@@ -26,21 +25,13 @@ export default function Typography() {
         <h2>Fonts</h2>
         <Fonts />
         <h3>SCSS</h3>
-        <Collapsible trigger="> SHOW" triggerWhenOpen="< CLOSE">
-          <SyntaxHighlighter showLineNumber style={gruvboxDark} language="scss">
-            {scssFontImport}
-          </SyntaxHighlighter>
-        </Collapsible>
+        <CollapsibleCode code={scssFontImport} language="scss" />
       </section>
       <section>
         <h2>Font Sizes</h2>
         <FontSizes />
         <h3>SCSS</h3>
-        <Collapsible trigger="> SHOW" triggerWhenOpen="< CLOSE">
-          <SyntaxHighlighter showLineNumber style={gruvboxDark} language="scss">
-            {fontSizes}
-          </SyntaxHighlighter>
-        </Collapsible>
+        <CollapsibleCode code={fontSizes} language="scss" />
       </section>
     </div>
   );

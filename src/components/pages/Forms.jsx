@@ -122,7 +122,7 @@ export default function Forms() {
       <input type="text" name="post_tag_list" id="post_tag_list" />
     </div>
     <div className="actions">
-      <input onClick={(e) => e.preventDefault()} type="submit" name="commit" value="Create Post" className="submit small" />
+      <input type="submit" name="commit" value="Create Post" className="submit small" />
     </div>
   </form>`
 

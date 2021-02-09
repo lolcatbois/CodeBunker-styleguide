@@ -23,9 +23,7 @@ export default function App() {
         <div className="title"> <h1>
           CodeBunker
         </h1>
-          <p>
-            Style Guide
-        </p>
+          <p>STYLE GUIDE</p>
         </div>
         <ul className="styleguide-nav">
           <li>
