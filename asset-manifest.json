@@ -1,24 +1,26 @@
 {
   "files": {
-    "main.css": "/CodeBunker-styleguide/static/css/main.5e78439a.chunk.css",
-    "main.js": "/CodeBunker-styleguide/static/js/main.761d9d0e.chunk.js",
-    "main.js.map": "/CodeBunker-styleguide/static/js/main.761d9d0e.chunk.js.map",
-    "runtime-main.js": "/CodeBunker-styleguide/static/js/runtime-main.bc9c7576.js",
-    "runtime-main.js.map": "/CodeBunker-styleguide/static/js/runtime-main.bc9c7576.js.map",
-    "static/js/2.3e4e99a6.chunk.js": "/CodeBunker-styleguide/static/js/2.3e4e99a6.chunk.js",
-    "static/js/2.3e4e99a6.chunk.js.map": "/CodeBunker-styleguide/static/js/2.3e4e99a6.chunk.js.map",
-    "static/js/3.b9220419.chunk.js": "/CodeBunker-styleguide/static/js/3.b9220419.chunk.js",
-    "static/js/3.b9220419.chunk.js.map": "/CodeBunker-styleguide/static/js/3.b9220419.chunk.js.map",
+    "main.css": "/CodeBunker-styleguide/static/css/main.cf2a2715.chunk.css",
+    "main.js": "/CodeBunker-styleguide/static/js/main.af73653a.chunk.js",
+    "main.js.map": "/CodeBunker-styleguide/static/js/main.af73653a.chunk.js.map",
+    "runtime-main.js": "/CodeBunker-styleguide/static/js/runtime-main.fa85707d.js",
+    "runtime-main.js.map": "/CodeBunker-styleguide/static/js/runtime-main.fa85707d.js.map",
+    "static/js/2.35d585f4.chunk.js": "/CodeBunker-styleguide/static/js/2.35d585f4.chunk.js",
+    "static/js/2.35d585f4.chunk.js.map": "/CodeBunker-styleguide/static/js/2.35d585f4.chunk.js.map",
+    "static/js/3.91166ea4.chunk.js": "/CodeBunker-styleguide/static/js/3.91166ea4.chunk.js",
+    "static/js/3.91166ea4.chunk.js.map": "/CodeBunker-styleguide/static/js/3.91166ea4.chunk.js.map",
     "index.html": "/CodeBunker-styleguide/index.html",
-    "static/css/main.5e78439a.chunk.css.map": "/CodeBunker-styleguide/static/css/main.5e78439a.chunk.css.map",
-    "static/js/2.3e4e99a6.chunk.js.LICENSE.txt": "/CodeBunker-styleguide/static/js/2.3e4e99a6.chunk.js.LICENSE.txt",
+    "static/css/main.cf2a2715.chunk.css.map": "/CodeBunker-styleguide/static/css/main.cf2a2715.chunk.css.map",
+    "static/js/2.35d585f4.chunk.js.LICENSE.txt": "/CodeBunker-styleguide/static/js/2.35d585f4.chunk.js.LICENSE.txt",
     "static/media/check.8a64e619.svg": "/CodeBunker-styleguide/static/media/check.8a64e619.svg",
-    "static/media/copy.07377e65.svg": "/CodeBunker-styleguide/static/media/copy.07377e65.svg"
+    "static/media/copy.07377e65.svg": "/CodeBunker-styleguide/static/media/copy.07377e65.svg",
+    "static/media/envelope-regular.7237e68b.svg": "/CodeBunker-styleguide/static/media/envelope-regular.7237e68b.svg",
+    "static/media/eye-regular.3466c274.svg": "/CodeBunker-styleguide/static/media/eye-regular.3466c274.svg"
   },
   "entrypoints": [
-    "static/js/runtime-main.bc9c7576.js",
-    "static/js/2.3e4e99a6.chunk.js",
-    "static/css/main.5e78439a.chunk.css",
-    "static/js/main.761d9d0e.chunk.js"
+    "static/js/runtime-main.fa85707d.js",
+    "static/js/2.35d585f4.chunk.js",
+    "static/css/main.cf2a2715.chunk.css",
+    "static/js/main.af73653a.chunk.js"
   ]
 }
